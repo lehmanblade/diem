@@ -237,7 +237,7 @@ jobs:
             echo -e "$num_fails test(s) failed:\n${failed_tests}"
             exit $num_fails
           else
-            echo -e "No issues detected in this build".
+            echo -e "No issues detected in this build". > ${MESSAGE_PAYLOAD_FILE}
             exit $num_fails
           fi
       - name: "Send Message"
