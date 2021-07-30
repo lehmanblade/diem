@@ -114,6 +114,7 @@ use std::{
     str::FromStr,
 };
 use tiny_keccak::{Hasher, Sha3};
+use serde::de::Error;
 
 /// A prefix used to begin the salt of every diem hashable structure. The salt
 /// consists in this global prefix, concatenated with the specified
